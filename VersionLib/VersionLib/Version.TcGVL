@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <GVL Name="Version" Id="{02c5a8f2-2deb-43e4-9f88-d538ac6b5ce1}" ParameterList="True">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL CONSTANT
+	Major : UINT;
+	Minor : UINT;
+	Revision : UINT;
+	Build : UINT;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

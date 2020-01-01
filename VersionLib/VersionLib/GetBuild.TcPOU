@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <POU Name="GetBuild" Id="{db5f19de-3a4e-4ca1-86fc-ec1c67798d00}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION GetBuild : UINT
+VAR_INPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[GetBuild := Version.Build;]]></ST>
+    </Implementation>
+    <LineIds Name="GetBuild">
+      <LineId Id="7" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

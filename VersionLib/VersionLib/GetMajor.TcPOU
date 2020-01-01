@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <POU Name="GetMajor" Id="{d7a5f597-3390-4262-a014-c48366ed1eef}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION GetMajor : UINT
+VAR_INPUT
+END_VAR
+VAR
+END_VAR
+
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[GetMajor := Version.Major;]]></ST>
+    </Implementation>
+    <LineIds Name="GetMajor">
+      <LineId Id="7" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

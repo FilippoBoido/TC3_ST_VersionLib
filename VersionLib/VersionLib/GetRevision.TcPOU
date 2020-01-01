@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <POU Name="GetRevision" Id="{eb6328b5-aa83-432b-bb0a-272935f2df1a}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION GetRevision : UINT
+VAR_INPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[GetRevision := Version.Revision;]]></ST>
+    </Implementation>
+    <LineIds Name="GetRevision">
+      <LineId Id="7" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

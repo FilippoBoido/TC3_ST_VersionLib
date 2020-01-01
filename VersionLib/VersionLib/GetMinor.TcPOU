@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <POU Name="GetMinor" Id="{1fbace56-5b28-41f7-8956-22c86ea94342}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION GetMinor : UINT
+VAR_INPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[GetMinor := Version.Minor;]]></ST>
+    </Implementation>
+    <LineIds Name="GetMinor">
+      <LineId Id="7" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

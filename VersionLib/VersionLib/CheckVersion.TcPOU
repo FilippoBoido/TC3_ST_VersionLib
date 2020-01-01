@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <POU Name="CheckVersion" Id="{9e2ddbef-7775-4a13-a318-40b2c35c443b}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION CheckVersion : BOOL
+VAR_INPUT
+	Major : UINT;
+	Minor : UINT;
+	Revision : UINT;
+	Build : UINT;
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF Major = Version.Major
+ AND Minor = Version.Minor
+ AND Revision = Version.Revision
+ AND Build = Version.Build
+THEN
+	CheckVersion := TRUE;
+END_IF]]></ST>
+    </Implementation>
+    <LineIds Name="CheckVersion">
+      <LineId Id="12" Count="2" />
+      <LineId Id="7" Count="0" />
+      <LineId Id="15" Count="2" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
